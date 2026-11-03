@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6f5">
+  <meta name="description" content="拾光，我们的爱情纪念册。记录相爱的每一天，一起走过的风景，以及写给彼此的温柔。">
+  <title>拾光 · 我们的爱情纪念册</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/vendor/leaflet/leaflet.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/effects.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="拾光，返回首页">
+      <svg class="brand-flower" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 32S4 22 4 12C4 4 15 2 20 10C25 2 36 4 36 12C36 22 20 32 20 32Z"/><path d="M20 27S9 20 9 13C9 8 16 7 20 14C24 7 31 8 31 13C31 20 20 27 20 27Z"/><path d="m15 35 5 3 5-3"/></g></svg>
+      <span class="brand-copy"><span id="brand-name">拾光</span><span class="brand-en">THE STORY OF US</span></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#home" data-nav class="is-active" aria-current="location">相遇</a>
+      <a href="#footprints" data-nav>足迹</a>
+      <a href="#moments" data-nav>回忆</a>
+      <a href="#about" data-nav>情书</a>
+    </nav>
+    <a class="header-note" href="#about"><span aria-hidden="true">♡</span> 一生很短，爱你很长</a>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <img id="hero-background" class="hero-background" src="assets/images/flowers.jpg" alt="" fetchpriority="high" width="1200" height="800">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div id="romance-effects" class="romance-effects" aria-hidden="true"></div>
+      <div class="hero-marginalia" aria-hidden="true"><span>A LOVE LETTER TO OUR DAYS</span><span>VOL. 01 — FOREVER &amp; ALWAYS</span></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow" id="hero-eyebrow">EVERY DAY, I CHOOSE YOU</p>
+        <p class="hero-script" aria-hidden="true">Always you.</p>
+        <h1 id="hero-title">初见心动，久处仍然。</h1>
+        <p id="hero-subtitle" class="hero-subtitle">从一个人的四季，到两个人的朝夕。想把往后的每一页，都写成我们。</p>
+        <div class="couple-tag" aria-label="这本纪念册的主角"><span id="couple-first">你</span><span class="couple-heart" aria-hidden="true">♡</span><span id="couple-second">我</span><span class="couple-tag-note">TWO HEARTS, ONE STORY</span></div>
+        <div class="timer-shell">
+        <div class="timer-intro"><span></span><p>我们相爱的每一天 <time id="start-date" datetime="2024-02-14T00:00:00+08:00">2024.02.14</time><span class="since-label">起</span></p><span></span></div>
+        <div id="timer" class="timer" role="group" aria-label="从起始日期至今的累计天数、小时、分钟和秒">
+          <div class="timer-part"><span class="timer-number" data-unit="days">0000</span><span class="timer-unit">天 <span>DAYS</span></span></div>
+          <div class="timer-part"><span class="timer-number" data-unit="hours">00</span><span class="timer-unit">时 <span>HOURS</span></span></div>
+          <div class="timer-part"><span class="timer-number" data-unit="minutes">00</span><span class="timer-unit">分 <span>MINUTES</span></span></div>
+          <div class="timer-part"><span class="timer-number" data-unit="seconds">00</span><span class="timer-unit">秒 <span>SECONDS</span></span></div>
+        </div>
+        <p id="timer-state" class="timer-state">时间往前，爱意不减</p>
+        </div>
+        <div class="hero-actions"><a class="hero-button" href="#moments">翻开我们的故事 <span aria-hidden="true">↗</span></a><a class="letter-link" href="#about">有封情书，想给你 <span aria-hidden="true">♡</span></a></div>
+      </div>
+      <div class="hero-bottom"><p id="hero-caption">把日子写成诗，把风景寄给你。</p><a href="#footprints" class="scroll-link">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a><span class="hero-coordinate" aria-hidden="true">WITH LOVE, ALWAYS.</span></div>
+    </section>
+
+    <p id="app-error" class="app-error" role="alert" hidden></p>
+    <noscript><p class="app-error">请启用 JavaScript，以浏览动态计时器、互动地图和图文手记。</p></noscript>
+
+    <div class="intro-note"><span class="little-star" aria-hidden="true">♡</span><p>不是每一天都特别，<br class="mobile-break"> 但有你的每一天，都值得纪念。</p><span class="intro-signature">You &amp; me, always.</span></div>
+
+    <section id="footprints" class="section footprints" aria-labelledby="footprints-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow section-eyebrow"><span>01</span> EVERYWHERE WITH YOU</p><h2 id="footprints-title">与你一起，把世界走成我们的地图<span class="title-dot">。</span></h2></div>
+        <p class="section-description">目的地可以很远，也可以是街角。<br>只要身边是你，就都是好风景。</p>
+      </div>
+      <div class="map-layout reveal">
+        <div class="map-frame">
+          <div id="map" aria-label="旅行足迹互动地图"></div>
+          <button id="reset-map" class="map-reset" type="button"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"/></svg>查看全部足迹</button>
+          <p id="map-status" class="map-status" role="status" hidden></p>
+        </div>
+        <aside class="places-panel" aria-label="地点记录">
+          <div class="places-heading"><span class="eyebrow">OUR LITTLE WORLD</span><span class="outline-heart" aria-hidden="true">♡</span></div>
+          <h3><span id="place-count">6</span> 个地方，<br>都有你和我。</h3>
+          <p class="places-hint">点一座城，重温我们的某一天</p>
+          <div id="place-list" class="place-list"></div>
+          <p class="places-note">Anywhere with you,<br><span>is somewhere I belong.</span></p>
+        </aside>
+      </div>
+      <div class="map-footer"><span class="small-pin" aria-hidden="true">⌖</span><p id="map-caption">一路收藏的心动。点击标记，打开一段回忆。</p><span class="map-footer-note">THE JOURNEY CONTINUES…</span></div>
+    </section>
+
+    <section id="moments" class="section moments" aria-labelledby="moments-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow section-eyebrow"><span>02</span> LITTLE MOMENTS, ENDLESS LOVE</p><h2 id="moments-title">那些普通却闪闪发亮的日子<span class="title-dot">。</span></h2></div>
+        <p class="section-description">一起看过的日落，随手拍下的笑脸。<br>原来浪漫，就藏在这些小事里。</p>
+      </div>
+      <div class="gallery-toolbar reveal"><nav id="memory-filters" class="memory-filters" aria-label="按手记类别筛选"></nav><p class="gallery-count" role="status"><span id="memory-count">6</span> 段我们的回忆 <span aria-hidden="true">↙</span></p></div>
+      <div id="memories" class="memories reveal"></div>
+      <p id="empty-state" class="empty-state" hidden>这一页暂时留白，等待新的故事。</p>
+      <div class="gallery-end"><span></span><p>故事还很长，主角一直是我们 <span aria-hidden="true">♡</span></p><span></span></div>
+    </section>
+
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="about-card reveal">
+        <div class="letter-intro"><p class="eyebrow section-eyebrow">03 / A LITTLE LOVE LETTER</p><h2 id="about-title">写给你，也写给往后的我们。</h2><p>有些话，想说很多遍。<br>有些喜欢，想用一生慢慢兑现。</p><span class="letter-script" aria-hidden="true">Forever starts with you.</span></div>
+        <details class="love-letter">
+          <summary class="letter-summary"><span class="envelope-flap" aria-hidden="true"></span><span class="wax-seal" aria-hidden="true">♡</span><span class="envelope-to">TO MY FAVORITE PERSON</span><span class="envelope-hint"><span class="letter-closed">点击拆开，读一封写给你的信</span><span class="letter-open">轻轻收好这封信 ↑</span></span></summary>
+          <div class="letter-body"><p id="letter-greeting" class="letter-greeting">亲爱的你：</p><p id="about-text">想和你一起，把平凡的每一天，过成值得珍藏的回忆。</p><p id="letter-signature" class="letter-signature">永远偏爱你的我</p><div class="profile"><span class="profile-avatar" aria-hidden="true">♡</span><div><strong id="profile-name">拾光</strong><p id="profile-bio">从相遇那天起，喜欢就有了名字。</p></div></div></div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p class="footer-brand">Two hearts, one home.</p>
+      <p>© <span id="footer-year">2026</span> 拾光 · 把往后的日子，写成我们</p>
+      <p class="music-credit">BGM: <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100787">Gymnopedie No. 1 — Kevin MacLeod (incompetech.com)</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+    </div>
+    <p class="sample-note">示例纪念册 · 等待写下你们的名字与故事</p>
+    <a href="#home" class="back-top" aria-label="回到顶部">↑</a>
+  </footer>
+
+  <button id="effects-toggle" class="effects-toggle" type="button" aria-label="浪漫特效" aria-pressed="true"><span aria-hidden="true">✧</span><span id="effects-state">特效 · 开</span></button>
+  <aside id="music-player" class="music-player" aria-label="背景音乐" hidden>
+    <p id="music-status" class="music-status" role="status" hidden></p>
+    <button id="music-toggle" class="music-toggle" type="button" aria-label="背景音乐" aria-pressed="false" aria-controls="background-music">
+      <span class="music-disc" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="9" opacity=".45"/><circle cx="16" cy="16" r="3"/><path d="M8 13a9 9 0 0 1 5-5M19 24a9 9 0 0 0 5-5"/></svg></span>
+      <span class="music-label"><span class="music-kicker">A LITTLE MELODY</span><span id="music-state">音乐 · 关</span></span>
+      <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    </button>
+    <audio id="background-music" loop preload="none"></audio>
+  </aside>
+
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="照片大图预览"><div class="dialog-inner"><button type="button" id="close-dialog" class="close-dialog" aria-label="关闭照片预览">×</button><img id="dialog-image" alt=""><p id="dialog-caption"></p></div></dialog>
+</body>
+</html>

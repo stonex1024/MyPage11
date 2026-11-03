@@ -1,0 +1,87 @@
+[
+  {
+    "id": "sea-breeze",
+    "date": "2026-08-15",
+    "placeId": "qingdao",
+    "category": "旅行",
+    "title": "海风很轻，身边是你",
+    "description": "和你沿着海岸慢慢走，不急着去哪里。浪花一遍遍靠近，你的手一直没有松开。这个夏天最喜欢的风景，是身边的你。",
+    "tags": ["牵手看海", "我们的夏天"],
+    "media": {
+      "type": "image",
+      "src": "assets/images/coast.jpg",
+      "alt": "柔和光线下的海岸风景"
+    }
+  },
+  {
+    "id": "small-flowers",
+    "date": "2026-05-20",
+    "placeId": "",
+    "category": "日常",
+    "title": "花开的时候，想和你一起看",
+    "description": "你说抬头看看，于是我们一起停在花树下。没有特别的安排，却因为身边有你，连一个普通下午都变得值得纪念。",
+    "tags": ["一起赏花", "心动日常"],
+    "media": {
+      "type": "image",
+      "src": "assets/images/flowers.jpg",
+      "alt": "春日枝头盛开的粉色樱花"
+    }
+  },
+  {
+    "id": "slow-morning",
+    "date": "2026-02-22",
+    "placeId": "chengdu",
+    "category": "影像",
+    "title": "镜头里的春天，心里的你",
+    "description": "把一朵花摇曳的样子拍给你，也把那句没说出口的想念藏进画面。想和你分享的，从来不只是风景。",
+    "tags": ["拍给你看", "温柔片段"],
+    "media": {
+      "type": "video",
+      "src": "assets/videos/flowers.mp4",
+      "poster": "assets/images/flowers.jpg",
+      "alt": "花朵随风轻轻摇动的短视频"
+    }
+  },
+  {
+    "id": "sunset-letter",
+    "date": "2025-06-08",
+    "placeId": "xiamen",
+    "category": "旅行",
+    "title": "一起追过的日落，都算数",
+    "description": "我们并肩等天空染上粉色，等海面接住最后一束光。你转头说真好看，我看着你，也轻轻说了一遍。",
+    "tags": ["一起追日落", "心动时刻"],
+    "media": {
+      "type": "image",
+      "src": "assets/images/hero.jpg",
+      "alt": "温柔的夕阳与自然风景"
+    }
+  },
+  {
+    "id": "city-walk",
+    "date": "2025-03-16",
+    "placeId": "shanghai",
+    "category": "日常",
+    "title": "万家灯火，想和你有一盏",
+    "description": "看城市的灯一盏盏亮起来，聊起以后家的样子。那一刻才发现，关于未来的每一个小小愿望，都已经悄悄加上了你。",
+    "tags": ["关于以后", "两个人的家"],
+    "media": {
+      "type": "image",
+      "src": "assets/images/city.jpg",
+      "alt": "晚霞下的上海黄浦江与城市建筑"
+    }
+  },
+  {
+    "id": "lake-letter",
+    "date": "2024-04-20",
+    "placeId": "dali",
+    "category": "旅行",
+    "title": "有风的地方，也要有你",
+    "description": "湖水很安静，云走得很慢。和你坐着发呆，偶尔说句话，偶尔只是相视一笑。原来喜欢，就是想把时间这样交给彼此。",
+    "tags": ["并肩看风景", "慢慢相爱"],
+    "media": {
+      "type": "image",
+      "src": "assets/images/lake.jpg",
+      "alt": "山峦环抱下的宁静湖面"
+    }
+  }
+]
